@@ -59,6 +59,7 @@ for i in [0, 100, 200]:
 print(pca.explained_variance_ratio_)
 print(np.sum(pca.explained_variance_ratio_))
 
+target = np.array([0]*100 + [1]*100 + [2]*100)
 plt.plot(pca.explained_variance_ratio_)
 
 lr = LogisticRegression()
