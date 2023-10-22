@@ -52,3 +52,10 @@ fruits_reconstruct = fruits_inverse.reshape(-1, 100, 100)
 for i in [0, 100, 200]:
   draw_fruits(fruits_reconstruct[i:i+100])
   print('\n')
+
+# 주성분 벡터가 이루는 축에 투영한 결과의 분산의 비율
+# 50개의 주성분이 전체 분산의 92%를 설명하고 있음을 알 수 있음
+
+print(pca.explained_variance_ratio_)
+print(np.sum(pca.explained_variance_ratio_))
+
